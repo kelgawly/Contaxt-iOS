@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A52783E427B2AD38007ECF1B /* ContaxtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52783E327B2AD38007ECF1B /* ContaxtApp.swift */; };
+		A52783E627B2AD38007ECF1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52783E527B2AD38007ECF1B /* ContentView.swift */; };
+		A52783E827B2AD38007ECF1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52783E727B2AD38007ECF1B /* Assets.xcassets */; };
+		A52783EB27B2AD38007ECF1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52783EA27B2AD38007ECF1B /* Preview Assets.xcassets */; };
+		A52783EF27B2AD38007ECF1B /* Contaxt WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A52783EE27B2AD38007ECF1B /* Contaxt WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A52783F427B2AD39007ECF1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52783F327B2AD39007ECF1B /* Assets.xcassets */; };
+		A52783FA27B2AD39007ECF1B /* Contaxt WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A52783F927B2AD39007ECF1B /* Contaxt WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A52783FF27B2AD39007ECF1B /* ContaxtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52783FE27B2AD39007ECF1B /* ContaxtApp.swift */; };
+		A527840127B2AD39007ECF1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A527840027B2AD39007ECF1B /* ContentView.swift */; };
+		A527840327B2AD39007ECF1B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A527840227B2AD39007ECF1B /* NotificationController.swift */; };
+		A527840527B2AD39007ECF1B /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A527840427B2AD39007ECF1B /* NotificationView.swift */; };
+		A527840727B2AD39007ECF1B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A527840627B2AD39007ECF1B /* ComplicationController.swift */; };
+		A527840927B2AD3A007ECF1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A527840827B2AD3A007ECF1B /* Assets.xcassets */; };
+		A527840C27B2AD3A007ECF1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A527840B27B2AD3A007ECF1B /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A52783F027B2AD38007ECF1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A52783D827B2AD38007ECF1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A52783ED27B2AD38007ECF1B;
+			remoteInfo = "Contaxt WatchKit App";
+		};
+		A52783FB27B2AD39007ECF1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A52783D827B2AD38007ECF1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A52783F827B2AD39007ECF1B;
+			remoteInfo = "Contaxt WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A527841427B2AD3A007ECF1B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A52783FA27B2AD39007ECF1B /* Contaxt WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A527841827B2AD3A007ECF1B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A52783EF27B2AD38007ECF1B /* Contaxt WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A52783E027B2AD38007ECF1B /* Contaxt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contaxt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52783E327B2AD38007ECF1B /* ContaxtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaxtApp.swift; sourceTree = "<group>"; };
+		A52783E527B2AD38007ECF1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A52783E727B2AD38007ECF1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A52783EA27B2AD38007ECF1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A52783EE27B2AD38007ECF1B /* Contaxt WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contaxt WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52783F327B2AD39007ECF1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A52783F927B2AD39007ECF1B /* Contaxt WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Contaxt WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52783FE27B2AD39007ECF1B /* ContaxtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaxtApp.swift; sourceTree = "<group>"; };
+		A527840027B2AD39007ECF1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A527840227B2AD39007ECF1B /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A527840427B2AD39007ECF1B /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		A527840627B2AD39007ECF1B /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		A527840827B2AD3A007ECF1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A527840B27B2AD3A007ECF1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A527840D27B2AD3A007ECF1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A527840E27B2AD3A007ECF1B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A52783DD27B2AD38007ECF1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A52783F627B2AD39007ECF1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A52783D727B2AD38007ECF1B = {
+			isa = PBXGroup;
+			children = (
+				A52783E227B2AD38007ECF1B /* Contaxt */,
+				A52783F227B2AD38007ECF1B /* Contaxt WatchKit App */,
+				A52783FD27B2AD39007ECF1B /* Contaxt WatchKit Extension */,
+				A52783E127B2AD38007ECF1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A52783E127B2AD38007ECF1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A52783E027B2AD38007ECF1B /* Contaxt.app */,
+				A52783EE27B2AD38007ECF1B /* Contaxt WatchKit App.app */,
+				A52783F927B2AD39007ECF1B /* Contaxt WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A52783E227B2AD38007ECF1B /* Contaxt */ = {
+			isa = PBXGroup;
+			children = (
+				A52783E327B2AD38007ECF1B /* ContaxtApp.swift */,
+				A52783E527B2AD38007ECF1B /* ContentView.swift */,
+				A52783E727B2AD38007ECF1B /* Assets.xcassets */,
+				A52783E927B2AD38007ECF1B /* Preview Content */,
+			);
+			path = Contaxt;
+			sourceTree = "<group>";
+		};
+		A52783E927B2AD38007ECF1B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A52783EA27B2AD38007ECF1B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A52783F227B2AD38007ECF1B /* Contaxt WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A52783F327B2AD39007ECF1B /* Assets.xcassets */,
+			);
+			path = "Contaxt WatchKit App";
+			sourceTree = "<group>";
+		};
+		A52783FD27B2AD39007ECF1B /* Contaxt WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A52783FE27B2AD39007ECF1B /* ContaxtApp.swift */,
+				A527840027B2AD39007ECF1B /* ContentView.swift */,
+				A527840227B2AD39007ECF1B /* NotificationController.swift */,
+				A527840427B2AD39007ECF1B /* NotificationView.swift */,
+				A527840627B2AD39007ECF1B /* ComplicationController.swift */,
+				A527840827B2AD3A007ECF1B /* Assets.xcassets */,
+				A527840D27B2AD3A007ECF1B /* Info.plist */,
+				A527840E27B2AD3A007ECF1B /* PushNotificationPayload.apns */,
+				A527840A27B2AD3A007ECF1B /* Preview Content */,
+			);
+			path = "Contaxt WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A527840A27B2AD3A007ECF1B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A527840B27B2AD3A007ECF1B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A52783DF27B2AD38007ECF1B /* Contaxt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A527841927B2AD3A007ECF1B /* Build configuration list for PBXNativeTarget "Contaxt" */;
+			buildPhases = (
+				A52783DC27B2AD38007ECF1B /* Sources */,
+				A52783DD27B2AD38007ECF1B /* Frameworks */,
+				A52783DE27B2AD38007ECF1B /* Resources */,
+				A527841827B2AD3A007ECF1B /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A52783F127B2AD38007ECF1B /* PBXTargetDependency */,
+			);
+			name = Contaxt;
+			productName = Contaxt;
+			productReference = A52783E027B2AD38007ECF1B /* Contaxt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A52783ED27B2AD38007ECF1B /* Contaxt WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A527841527B2AD3A007ECF1B /* Build configuration list for PBXNativeTarget "Contaxt WatchKit App" */;
+			buildPhases = (
+				A52783EC27B2AD38007ECF1B /* Resources */,
+				A527841427B2AD3A007ECF1B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A52783FC27B2AD39007ECF1B /* PBXTargetDependency */,
+			);
+			name = "Contaxt WatchKit App";
+			productName = "Contaxt WatchKit App";
+			productReference = A52783EE27B2AD38007ECF1B /* Contaxt WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A52783F827B2AD39007ECF1B /* Contaxt WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A527841127B2AD3A007ECF1B /* Build configuration list for PBXNativeTarget "Contaxt WatchKit Extension" */;
+			buildPhases = (
+				A52783F527B2AD39007ECF1B /* Sources */,
+				A52783F627B2AD39007ECF1B /* Frameworks */,
+				A52783F727B2AD39007ECF1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Contaxt WatchKit Extension";
+			productName = "Contaxt WatchKit Extension";
+			productReference = A52783F927B2AD39007ECF1B /* Contaxt WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A52783D827B2AD38007ECF1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					A52783DF27B2AD38007ECF1B = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					A52783ED27B2AD38007ECF1B = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					A52783F827B2AD39007ECF1B = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = A52783DB27B2AD38007ECF1B /* Build configuration list for PBXProject "Contaxt" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A52783D727B2AD38007ECF1B;
+			productRefGroup = A52783E127B2AD38007ECF1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A52783DF27B2AD38007ECF1B /* Contaxt */,
+				A52783ED27B2AD38007ECF1B /* Contaxt WatchKit App */,
+				A52783F827B2AD39007ECF1B /* Contaxt WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A52783DE27B2AD38007ECF1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52783EB27B2AD38007ECF1B /* Preview Assets.xcassets in Resources */,
+				A52783E827B2AD38007ECF1B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A52783EC27B2AD38007ECF1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52783F427B2AD39007ECF1B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A52783F727B2AD39007ECF1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A527840C27B2AD3A007ECF1B /* Preview Assets.xcassets in Resources */,
+				A527840927B2AD3A007ECF1B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A52783DC27B2AD38007ECF1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52783E627B2AD38007ECF1B /* ContentView.swift in Sources */,
+				A52783E427B2AD38007ECF1B /* ContaxtApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A52783F527B2AD39007ECF1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A527840327B2AD39007ECF1B /* NotificationController.swift in Sources */,
+				A527840127B2AD39007ECF1B /* ContentView.swift in Sources */,
+				A527840727B2AD39007ECF1B /* ComplicationController.swift in Sources */,
+				A52783FF27B2AD39007ECF1B /* ContaxtApp.swift in Sources */,
+				A527840527B2AD39007ECF1B /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A52783F127B2AD38007ECF1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A52783ED27B2AD38007ECF1B /* Contaxt WatchKit App */;
+			targetProxy = A52783F027B2AD38007ECF1B /* PBXContainerItemProxy */;
+		};
+		A52783FC27B2AD39007ECF1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A52783F827B2AD39007ECF1B /* Contaxt WatchKit Extension */;
+			targetProxy = A52783FB27B2AD39007ECF1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A527840F27B2AD3A007ECF1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A527841027B2AD3A007ECF1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A527841227B2AD3A007ECF1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Contaxt WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = MV8X7V947C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Contaxt WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Contaxt WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinyhacktechnology.Contaxt.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		A527841327B2AD3A007ECF1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Contaxt WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = MV8X7V947C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Contaxt WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Contaxt WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinyhacktechnology.Contaxt.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		A527841627B2AD3A007ECF1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MV8X7V947C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Contaxt_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Contaxt WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.tinyhacktechnology.Contaxt;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinyhacktechnology.Contaxt.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		A527841727B2AD3A007ECF1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MV8X7V947C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Contaxt_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Contaxt WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.tinyhacktechnology.Contaxt;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinyhacktechnology.Contaxt.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		A527841A27B2AD3A007ECF1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Contaxt/Preview Content\"";
+				DEVELOPMENT_TEAM = MV8X7V947C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinyhacktechnology.Contaxt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A527841B27B2AD3A007ECF1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Contaxt/Preview Content\"";
+				DEVELOPMENT_TEAM = MV8X7V947C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinyhacktechnology.Contaxt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A52783DB27B2AD38007ECF1B /* Build configuration list for PBXProject "Contaxt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A527840F27B2AD3A007ECF1B /* Debug */,
+				A527841027B2AD3A007ECF1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A527841127B2AD3A007ECF1B /* Build configuration list for PBXNativeTarget "Contaxt WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A527841227B2AD3A007ECF1B /* Debug */,
+				A527841327B2AD3A007ECF1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A527841527B2AD3A007ECF1B /* Build configuration list for PBXNativeTarget "Contaxt WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A527841627B2AD3A007ECF1B /* Debug */,
+				A527841727B2AD3A007ECF1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A527841927B2AD3A007ECF1B /* Build configuration list for PBXNativeTarget "Contaxt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A527841A27B2AD3A007ECF1B /* Debug */,
+				A527841B27B2AD3A007ECF1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A52783D827B2AD38007ECF1B /* Project object */;
+}
