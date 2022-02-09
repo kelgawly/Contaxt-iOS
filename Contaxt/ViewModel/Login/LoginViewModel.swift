@@ -36,7 +36,10 @@ class LoginViewModel: ObservableObject{
                             if let userData = userData {
                                 // A `userData` value was successfully initialized from the DocumentSnapshot.
                                 LocalPersistence.save(userData: userData)
-                                self.authComplete = true
+                                DispatchQueue.main.async {
+                                    self.authComplete = true
+                                }
+                                
                             } else {
                                 // A nil value was successfully initialized from the DocumentSnapshot,
                                 // or the DocumentSnapshot was nil.
@@ -61,7 +64,10 @@ class LoginViewModel: ObservableObject{
                     let userData = UserData(userType: self.userType, name: self.name, firebaseID: authData.user.uid)
                     try self.db.collection("users").document(authData.user.uid).setData(from: userData)
                     LocalPersistence.save(userData: userData)
-                    self.authComplete = true
+                    DispatchQueue.main.async {
+                        self.authComplete = true
+                    }
+                    
                 } catch let error{
                     print("Error setting user document: \(error)")
                 }

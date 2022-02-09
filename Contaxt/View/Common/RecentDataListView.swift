@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RecentDataListView: View {
-    @StateObject var viewModel = RecentDataListViewModel()
+    @StateObject private var viewModel = RecentDataListViewModel()
     var body: some View {
         
         if let sensorDataPoints = viewModel.sensorDataPoints{

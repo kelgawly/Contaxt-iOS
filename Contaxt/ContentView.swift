@@ -8,7 +8,7 @@
 import SwiftUI
 import FirebaseAuth
 struct ContentView: View {
-    @StateObject var viewModel = ContentViewModel()
+    @StateObject private var viewModel = ContentViewModel()
     var body: some View {
         NavigationView{
         if (viewModel.user != nil) && (viewModel.userType != nil) {
