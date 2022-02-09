@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RefHomeView: View {
     var body: some View {
-        Text("ref home view")
+        RecentDataListView().navigationBarBackButtonHidden(true)
     }
 }
 

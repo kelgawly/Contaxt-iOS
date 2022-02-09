@@ -10,6 +10,7 @@ import FirebaseAuth
 struct ContentView: View {
     @StateObject var viewModel = ContentViewModel()
     var body: some View {
+        NavigationView{
         if (viewModel.user != nil) && (viewModel.userType != nil) {
             switch viewModel.userType!{
             case .fan:
@@ -24,6 +25,7 @@ struct ContentView: View {
             //go to ref or fan selection
             LoginView()
             
+        }
         }
         
         

@@ -7,11 +7,16 @@
 
 import Foundation
 
-class SensorData: Codable{
+class SensorData: Codable, Identifiable{
+    let id = UUID()
     let fsrResistance: Double
     let accelerometer: Accelerometer
     let gps: GPS
-    let timeStamp: Date
+    let timestamp: Date
+    let counter: Int
+    private enum CodingKeys: String, CodingKey{
+        case fsrResistance, accelerometer, gps, timestamp, counter
+    }
 }
 
 class Accelerometer: Codable{

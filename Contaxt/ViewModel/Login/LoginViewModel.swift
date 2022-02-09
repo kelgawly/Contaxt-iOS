@@ -8,7 +8,8 @@
 import Foundation
 
 import FirebaseFirestoreSwift
-import Firebase
+import FirebaseFirestore
+import FirebaseAuth
 class LoginViewModel: ObservableObject{
     @Published var userType: UserType = .fan
     @Published var name:String = ""

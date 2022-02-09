@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct RecentDataListView: View {
+    @StateObject var viewModel = RecentDataListViewModel()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        if let sensorDataPoints = viewModel.sensorDataPoints{
+        List{
+            
+            ForEach(sensorDataPoints){ dataPoint in
+                NavigationLink {
+                    DataView(sensorData: dataPoint)
+                } label: {
+                    Text(K.dateFormatter.string(from: dataPoint.timestamp))
+                }
+
+                
+            }
+        }.navigationTitle("Recent Readings")
+        } else{
+            ProgressView().navigationTitle("Recent Readings")
+        }
+        
     }
 }
 

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FanHomeView: View {
     var body: some View {
-        Text("fan home view")
+        RecentDataListView().navigationBarBackButtonHidden(true)
     }
 }
 

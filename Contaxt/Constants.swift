@@ -13,4 +13,10 @@ struct K{
     struct colors{
         static let brandBlue = Color("BrandColor")
     }
+    static var dateFormatter: DateFormatter{
+        let df = DateFormatter()
+        df.timeStyle = .medium
+        df.dateStyle = .short
+        return df
+    }
 }
