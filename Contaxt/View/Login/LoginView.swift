@@ -10,17 +10,17 @@ import SwiftUI
 struct LoginView: View {
     @ObservedObject var viewModel = LoginViewModel()
     var body: some View {
-        NavigationView {
-            VStack(spacing:15){
+        
+        VStack(spacing:15){
+            
+            
+            
+            Picker("Login",selection: $viewModel.userType) {
+                Text("Fan").tag(UserType.fan)
+                Text("Referee").tag(UserType.ref)
                 
-                
-                
-                Picker("Login",selection: $viewModel.userType) {
-                    Text("Fan").tag(UserType.fan)
-                    Text("Referee").tag(UserType.ref)
-                    
-                } .pickerStyle(.segmented)
-                Group{
+            } .pickerStyle(.segmented)
+            Group{
                 if viewModel.authType == .signUp{
                     TextField("Full Name", text: $viewModel.name, prompt: Text("Full Name"))
                     Divider()
@@ -42,55 +42,55 @@ struct LoginView: View {
                 } label: {
                     ButtonView(buttonTitle: viewModel.authType == .signIn ? "Login" : "Sign up", buttonType: .fullWidth)
                 }.buttonStyle(.plain)
-                }
-                HStack{
-                    Text(viewModel.authType == .signIn ? "Don't have an account?" :"Already have an account?")
-                    Button {
-                        switch viewModel.authType {
-                        case .signIn:
-                            withAnimation {
-                                viewModel.authType = .signUp
-                            }
-                            
-                        case .signUp:
-                            withAnimation {
-                                viewModel.authType = .signIn
-                            }
-                            
+            }
+            HStack{
+                Text(viewModel.authType == .signIn ? "Don't have an account?" :"Already have an account?")
+                Button {
+                    switch viewModel.authType {
+                    case .signIn:
+                        withAnimation {
+                            viewModel.authType = .signUp
                         }
-                    } label: {
-                        Text(viewModel.authType == .signIn ? "Create one" :"Login").foregroundColor(.brandColor)
-                    }.buttonStyle(.plain)
-                }
-                
-                
-                
-                
-                Spacer()
-                
-                NavigationLink(isActive: $viewModel.authComplete) {
-                    switch viewModel.userType {
-                    case .ref:
-                        RefHomeView()
-                    case .fan:
-                        FanHomeView()
+                        
+                    case .signUp:
+                        withAnimation {
+                            viewModel.authType = .signIn
+                        }
+                        
                     }
-                    ContentView()
                 } label: {
-                    EmptyView()
+                    Text(viewModel.authType == .signIn ? "Create one" :"Login").foregroundColor(.brandColor)
                 }.buttonStyle(.plain)
-
-                
-                
-                
-            }.padding()
-                .navigationTitle(viewModel.authType == .signIn ? "Login" : "Sign Up")
-                .alert("Error", isPresented: $viewModel.displayError) {
-                    //dont do anything
-                }message: {
-                    Text(viewModel.errorDescription)
+            }
+            
+            
+            
+            
+            Spacer()
+            
+            NavigationLink(isActive: $viewModel.authComplete) {
+                switch viewModel.userType {
+                case .ref:
+                    RefHomeView()
+                case .fan:
+                    FanHomeView()
                 }
-        }
+                
+            } label: {
+                EmptyView()
+            }.buttonStyle(.plain)
+            
+            
+            
+            
+        }.padding()
+            .navigationTitle(viewModel.authType == .signIn ? "Login" : "Sign Up")
+            .alert("Error", isPresented: $viewModel.displayError) {
+                //dont do anything
+            }message: {
+                Text(viewModel.errorDescription)
+            }
+        
         
         
     }
