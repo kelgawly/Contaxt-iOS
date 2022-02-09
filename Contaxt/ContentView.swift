@@ -6,11 +6,28 @@
 //
 
 import SwiftUI
-
+import FirebaseAuth
 struct ContentView: View {
+    @StateObject var viewModel = ContentViewModel()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        if (viewModel.user != nil) && (viewModel.userType != nil) {
+            switch viewModel.userType!{
+            case .fan:
+                //show fan view for signed in user
+                FanHomeView()
+                
+            case .ref:
+                //show ref view for signed in user
+                RefHomeView()
+            }
+        } else{
+            //go to ref or fan selection
+            LoginView()
+            
+        }
+        
+        
+        
     }
 }
 
