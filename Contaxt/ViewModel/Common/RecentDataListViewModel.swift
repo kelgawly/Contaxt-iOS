@@ -8,6 +8,8 @@
 import Foundation
 import FirebaseFirestore
 import FirebaseFirestoreSwift
+import FirebaseAuth
+import SwiftUI
 class RecentDataListViewModel: ObservableObject{
     @Published var sensorDataPoints: [SensorData]? = nil
     let db = Firestore.firestore()
@@ -23,6 +25,16 @@ class RecentDataListViewModel: ObservableObject{
             
                    
             
+        }
+    }
+    
+    func signOut(){
+        do{
+            try withAnimation{
+                try Auth.auth().signOut()
+            }
+        }catch{
+            print("Error signing out user: \(error)")
         }
     }
 }

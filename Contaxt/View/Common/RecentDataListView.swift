@@ -24,6 +24,16 @@ struct RecentDataListView: View {
                 
             }
         }.navigationTitle("Recent Readings")
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button {
+                            viewModel.signOut()
+                        } label: {
+                            Text("Sign Out")
+                        }
+
+                    }
+                }
         } else{
             ProgressView().navigationTitle("Recent Readings")
         }
