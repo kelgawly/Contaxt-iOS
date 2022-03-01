@@ -12,6 +12,7 @@ struct DataView: View {
     var body: some View {
         List{
             DataColumn(label: "Timestamp", data: K.dateFormatter.string(from: sensorData.timestamp) )
+            DataColumn(label: "Force Sensor Resistance", data: String(sensorData.fsrResistance) )
             DataColumn(label: "X Acceleration", data: String( sensorData.accelerometer.x) )
             DataColumn(label: "Y Acceleration", data: String( sensorData.accelerometer.y) )
             DataColumn(label: "Z Acceleration", data: String( sensorData.accelerometer.z) )
